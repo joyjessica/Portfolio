@@ -77,7 +77,6 @@ Jessica Joy is a full-time student in the Data Science and Analytics program at 
 ## Professional Experience
 
 
-
 **EssenceMediacom**: *Senior Analyst, Data Science and Modeling*  
 New York, NY | June 2021 – August 2024
 
@@ -141,3 +140,14 @@ Jericho, NY | August 2018 – December 2018
 - Facilitated communication between clients and underwriters, ensuring underwriting decisions, proposals, and status updates were clearly documented and shared
 :::
 :::
+
+
+## Certifications
+
+**New York City Data Science Academy:** *Data Science Fellow*
+New York, NY | January 2021 – April 2021
+
+::: {#pdf-container}
+```{=html}
+<embed src="images/bootcamp.pdf" width="50%" height="600px" type="application/pdf"> 
+```
