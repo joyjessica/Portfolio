@@ -6,6 +6,7 @@ project:
     - "!projects"
   resources:
     - projects/dsan-5000/_site
+    - projects/dsan-5100/_site
 
 website:
   title: "Portfolio"
