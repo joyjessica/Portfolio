@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.5.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>portfolio</title>
+<title>DSAN-5000: Project – Breaking the Cycle: How School Quality and Socioeconomics Shape High School Dropout and College Success</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,6 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./assets/gu-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,7 +89,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,11 +99,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">portfolio</span>
+    <span class="navbar-title">DSAN-5000: Project</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -93,12 +113,47 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="./report/report.html"> 
+<span class="menu-text">Report</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-technical-details" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Technical details</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-technical-details">    
+        <li>
+    <a class="dropdown-item" href="./technical-details/data-collection/main.html">
+ <span class="dropdown-text">Data-collection</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./technical-details/data-cleaning/main.html">
+ <span class="dropdown-text">Data-cleaning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./technical-details/eda/main.html">
+ <span class="dropdown-text">Exploratory Data Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./technical-details/unsupervised-learning/main.html">
+ <span class="dropdown-text">Unsupervised Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./technical-details/supervised-learning/main.html">
+ <span class="dropdown-text">Supervised Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./technical-details/progress-log.html">
+ <span class="dropdown-text">Progress Log</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./technical-details/llm-usage-log.html">
+ <span class="dropdown-text">LLM usage Log</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -108,14 +163,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation:</a>
+  <ul class="collapse">
+  <li><a href="#data-science-questions" id="toc-data-science-questions" class="nav-link" data-scroll-target="#data-science-questions">Data Science Questions:</a></li>
+  <li><a href="#relevant-current-research" id="toc-relevant-current-research" class="nav-link" data-scroll-target="#relevant-current-research">Relevant Current Research</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">portfolio</h1>
+<h1 class="title">Breaking the Cycle: How School Quality and Socioeconomics Shape High School Dropout and College Success</h1>
 </div>
 
 
@@ -132,12 +198,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p align="center">
+<img src="images/dropouts.png" width="400" height="200">
+</p>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation:</h2>
+<p>Dropping out of high school has often been linked to many long term negative outcomes. Research shows that students who drop out of high school are more likely to face unemployment, earn lower wages, engage in high-risk behaviors, become incarcerated, and impose significant costs on society<span class="citation" data-cites="lansford_public_2016"><sup><a href="#ref-lansford_public_2016" role="doc-biblioref">1</a></sup></span>. Through this website, I aim to explore the factors that potentially contribute to high school dropout rates, with the goal of identifying opportunities for early intervention to mitigate these negative outcomes. Particularly, I wanted to look at how these metrics manifest in New York City public schools. My focus will be on understanding how school quality and socioeconomic factors influence student outcomes, specifically chronic absenteeism (missing more than 10% of the school year), dropout rates, and college persistence (returning to college after the first year).</p>
+<p>This research is intended to inform policymakers, researchers, and data enthusiasts interested in understanding the factors that contribute to chronic absenteeism, dropout rates, and college persistence. I hypothesize that these three outcomes are interconnected. For instance, high chronic absenteeism may correlate with higher dropout rates, and even if students avoid dropping out of high school, could there still be a risk of low college persistence? These are the key questions I aim to address through this research.</p>
+<section id="data-science-questions" class="level3">
+<h3 class="anchored" data-anchor-id="data-science-questions">Data Science Questions:</h3>
+<ol type="1">
+<li>How does a school’s environment contribute to better student outcomes?</li>
+<li>What are the most significant predictors of student absenteeism, dropout rates and college persistence?</li>
+<li>What are the interactions between chronic absenteeism, dropout rates, and college persistence?</li>
+<li>How does socioeconomic status impact student absenteeism, dropout rates and college persistence?</li>
+<li>How can early academic indicators be used to identify schools at risk of high dropout or not persisting in college?</li>
+</ol>
+</section>
+<section id="relevant-current-research" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-current-research">Relevant Current Research</h3>
+<p><strong>School building condition, school attendance, and academic achievement in New York City public schools: A mediation model:</strong> This study, published in the Journal of Environmental Psychology in 2008, examined the relationship between school building condition and the academic achievement of students in elementary schools in Manhattan, New York City. The researchers found that school building condition was positively related to student achievement in mathematics and English Language Arts. They also found that attendance important to this relationship, suggesting that students in better-quality buildings are more likely to attend school, which in turn leads to better academic outcomes.<span class="citation" data-cites="duran-narucki_school_2008"><sup><a href="#ref-duran-narucki_school_2008" role="doc-biblioref">2</a></sup></span></p>
+<p><strong>A Public Health Perspective on School Dropout and Adult Outcomes: A Prospective Study of Risk and Protective Factors from Age 5 to 27</strong>: This research paper investigates the long-term consequences of high school dropout, framing it as a significant public health issue. A study followed 585 individuals from age 5 to 27, analyzing the correlation between dropping out and negative outcomes like unemployment, arrest, and poor health, finding a strong link between them. The researchers identified several risk and protective factors, such as low socioeconomic status at age 5 and peer rejection in elementary school. The findings highlight the importance of early intervention and suggest that addressing school dropout proactively could significantly improve individual lives and reduce societal costs.<span class="citation" data-cites="lansford_public_2016"><sup><a href="#ref-lansford_public_2016" role="doc-biblioref">1</a></sup></span></p>
+<p><strong>Neighborhood Poverty and Public Policy: A 5-Year Follow-Up of Children’s Educational Outcomes in the New York City Moving to Opportunity Demonstration</strong>: This research paper analyzes the long-term effects of the Moving to Opportunity (MTO) program, an experiment that provided housing vouchers to low-income families in high-poverty neighborhoods to relocate to lower-poverty areas. The study focuses on a subset of New York City children followed for five years, comparing their educational outcomes with those who remained in high-poverty neighborhoods. The results revealed negative effects on grades and school engagement for both boys and girls in low-poverty neighborhoods. The study highlights the necessity of improving educational outcomes for low-income minority children, focusing on family, neighborhood, housing, and school factors.<span class="citation" data-cites="leventhal_neighborhood_2005"><sup><a href="#ref-leventhal_neighborhood_2005" role="doc-biblioref">3</a></sup></span></p>
+</section>
+<section id="next-steps" class="level3">
+<h3 class="anchored" data-anchor-id="next-steps">Next Steps</h3>
+<p>This website offers data driven insights, visualizations, and machine learning models to dive into this topic. I invite you to explore the content!</p>
 
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-lansford_public_2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Lansford, J. E., Dodge, K. A., Pettit, G. S. &amp; Bates, J. E. <a href="https://doi.org/10.1016/j.jadohealth.2016.01.014">A <span>Public</span> <span>Health</span> <span>Perspective</span> on <span>School</span> <span>Dropout</span> and <span>Adult</span> <span>Outcomes</span>: <span>A</span> <span>Prospective</span> <span>Study</span> of <span>Risk</span> and <span>Protective</span> <span>Factors</span> from <span>Age</span> 5 to 27</a>. <em>The Journal of adolescent health : official publication of the Society for Adolescent Medicine</em> <strong>58</strong>, 652–658 (2016).</div>
+</div>
+<div id="ref-duran-narucki_school_2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Durán-Narucki, V. <a href="https://doi.org/10.1016/j.jenvp.2008.02.008">School building condition, school attendance, and academic achievement in <span>New</span> <span>York</span> <span>City</span> public schools: <span>A</span> mediation model</a>. <em>Journal of Environmental Psychology</em> <strong>28</strong>, 278–286 (2008).</div>
+</div>
+<div id="ref-leventhal_neighborhood_2005" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Leventhal, T., Fauth, R. C. &amp; Brooks-Gunn, J. <a href="https://doi.org/10.1037/0012-1649.41.6.933">Neighborhood poverty and public policy: <span>A</span> 5-year follow-up of children’s educational outcomes in the <span>New</span> <span>York</span> <span>City</span> moving to opportunity demonstration</a>. <em>Developmental Psychology</em> <strong>41</strong>, 933–952 (2005).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -173,18 +276,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -216,7 +308,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -224,7 +338,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
