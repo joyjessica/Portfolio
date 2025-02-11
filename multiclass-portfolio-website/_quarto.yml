@@ -19,6 +19,8 @@ website:
         menu: 
           - text: NYC Schools, Socioeconomics & Success - Fall 2024
             href: projects/dsan-5000/_site/index.html
+          - text: Statistical Analysis of Airbnb - Fall 2024
+            href: projects/dsan-5100/_site/index.html
 
 format:
   html:
