@@ -12,6 +12,8 @@ website:
   title: "Portfolio"
   favicon: "images/gu-logo.png"
   navbar:
+    background: "#c9ada7"
+    toggle-position: right
     left:
       - href: index.qmd
         text: Home
@@ -25,7 +27,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - lux
+      - styles/custom.scss
     toc: true
 
 

@@ -1,8 +1,6 @@
 ---
 title: "Jessica Joy"
-format:
-    html:
-        embed-resources: True
+format: html
 ---
 
 :::{.grid}
@@ -144,10 +142,12 @@ Jericho, NY | August 2018 – December 2018
 
 ## Certifications
 
-**New York City Data Science Academy:** *Data Science Fellow*
+**New York City Data Science Academy:** *Data Science Fellow *  
 New York, NY | January 2021 – April 2021
+
+[Check out my blog!](https://nycdatascience.com/blog/author/jessica-joy/)
 
 ::: {#pdf-container}
 ```{=html}
-<embed src="images/bootcamp.pdf" width="50%" height="600px" type="application/pdf"> 
+<embed src="images/bootcamp.pdf" width="100%" height="400px" type="application/pdf">
 ```
