@@ -14,7 +14,7 @@ website:
   navbar:
     background: "#e3d5ca"
     toggle-position: right
-    left:
+    right:
       - href: index.qmd
         text: Home
 
