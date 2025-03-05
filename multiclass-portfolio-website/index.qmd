@@ -3,18 +3,18 @@ format: html
 ---
 
 
-::: {style="text-align: center; font-size: 3em; font-weight: bold;"}
+::: {style="text-align: left; font-size: 3em; font-weight: bold;"}
 # Jessica Joy
 :::
 
-::: {style="background-color: #d6ccc2; padding: 25px; border-radius: 10px;"}  
+::: {style="background-color: #e3d5ca; padding: 20px; border-radius: 10px;"}
 :::{.grid}
 ::: {.g-col-4}
 ![](images/my_image.jpg){width=200 height=300}
 :::
 ::: {.g-col-8}
 
-Jessica Joy is a full-time student in the Data Science and Analytics program at Georgetown University. She earned her Bachelor of Science in Financial Economics from Binghamton University in 2020. Before joining the DSAN program, she worked as a senior data analyst at EssenceMediacom, a marketing agency in New York City, where she contributed to various projects, including Marketing Mix Models and ad optimizations. She is excited to further develop her data skills and apply them to other industries.
+Welcome to my page! I am a passionate data scientist pursuing my master’s in Data Science and Analytics at Georgetown University. I have a BS in Financial Economics from Binghamton University and three years of professional data science experience at EssenceMediacom, a top marketing agency in NYC. There, I specialized in Marketing Mix Modeling, ad optimizations, and data-driven strategy to drive KPIs. Now, I am eager to expand my expertise, applying my analytical skills to solve complex challenges across industries. Let’s connect!
 
 :::
 :::

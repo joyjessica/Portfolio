@@ -12,9 +12,9 @@ website:
   title: "Portfolio"
   favicon: "images/gu-logo.png"
   navbar:
-    background: "#e3d5ca"
+    background: "#d6ccc2"
     toggle-position: right
-    right:
+    left:
       - href: index.qmd
         text: Home
 
