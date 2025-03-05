@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
     "title": "Statistical Insights into Airbnb Listings and Neighborhood Dynamics",
-    "section": "",
-    "text": "Jessica Joy\n\nAdam Stein\n\nSoong-Ping Hill\n\nHung Tran\n\nDavid Corcoran"
+    "section": "Introduction",
+    "text": "Introduction\nUnderstanding the relationship between neighborhood safety, listing features, and pricing models is crucial for both Airbnb hosts and potential guests. This analysis examines Airbnb listings alongside city crime data, leveraging statistical testing and geospatial analysis to uncover patterns and insights that influence rental pricing and desirability."
   },
   {
     "objectID": "index.html#presentation",
     "href": "index.html#presentation",
     "title": "Statistical Insights into Airbnb Listings and Neighborhood Dynamics",
     "section": "Presentation",
-    "text": "Presentation\n\n \n\nReport"
+    "text": "Presentation"
   },
   {
     "objectID": "index.html#report",
