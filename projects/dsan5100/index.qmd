@@ -1,16 +1,12 @@
 ---
 title: "Statistical Insights into Airbnb Listings and Neighborhood Dynamics"
+author: "<b>Jessica Joy</b>, 
+Adam Stein, Soong-Ping Hill, Hung Tran, David Corcoran" 
 ---
 #### DSAN 5100: Probabilistic Modeling and Statistical Computing
 
-##### Authors: 
-- **Jessica Joy**  
-- *Adam Stein*  
-- *Soong-Ping Hill*  
-- *Hung Tran*  
-- *David Corcoran*  
 
-### Introduction
+## Introduction
 
 Understanding the relationship between neighborhood safety, listing features, and pricing models is crucial for both Airbnb hosts and potential guests. This analysis examines Airbnb listings alongside city crime data, leveraging statistical testing and geospatial analysis to uncover patterns and insights that influence rental pricing and desirability.
 
@@ -20,6 +16,7 @@ Understanding the relationship between neighborhood safety, listing features, an
 ```{=html}
 <embed src="files/DSAN5100_FinalProjectPresentation.pdf" width="100%" height="600px" type="application/pdf"> 
 ```
+:::
 
 ## Report
 
@@ -27,3 +24,4 @@ Understanding the relationship between neighborhood safety, listing features, an
 ```{=html}
 <embed src="files/Airbnb_Report.pdf" width="100%" height="600px" type="application/pdf"> 
 ```
+:::
