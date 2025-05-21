@@ -7,6 +7,8 @@ project:
   resources:
     - projects/dsan-5000/_site
     - projects/dsan-5100/_site
+    - projects/scholarship/_site
+    - projects/dsan-5200/_site
 
 website:
   title: "Portfolio"
