@@ -24,6 +24,11 @@ website:
             href: projects/dsan-5000/_site/index.html
           - text: Statistical Analysis of Airbnb - Fall 2024
             href: projects/dsan-5100/_site/index.html
+          - text: HIV/AIDS Through Visualization - Spring 2025
+            href: projects/dsan-5200/_site/index.html
+          - text: Risk Factors for Aid Worker Attacks - Spring 2025
+            href: projects/scholarship/_site/index.html
+
 
 format:
   html:

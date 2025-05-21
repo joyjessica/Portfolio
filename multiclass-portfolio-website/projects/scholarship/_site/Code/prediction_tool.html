@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Portfolio</title>
+<title>AWSD Report – Aid Worker Security Severity Predictor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/gu-logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Portfolio</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">AWSD Report</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,29 +108,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Report</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../Code/prediction_tool.html" aria-current="page"> 
+<span class="menu-text">Prediction Tool</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-code" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Code</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-code">    
         <li>
-    <a class="dropdown-item" href="./projects/dsan-5000/_site/index.html">
- <span class="dropdown-text">NYC Schools, Socioeconomics &amp; Success - Fall 2024</span></a>
+    <a class="dropdown-item" href="../Code/eda.html">
+ <span class="dropdown-text">EDA</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/dsan-5100/_site/index.html">
- <span class="dropdown-text">Statistical Analysis of Airbnb - Fall 2024</span></a>
+    <a class="dropdown-item" href="../Code/machine_learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/dsan-5200/_site/index.html">
- <span class="dropdown-text">HIV/AIDS Through Visualization - Spring 2025</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./projects/scholarship/_site/index.html">
- <span class="dropdown-text">Risk Factors for Aid Worker Attacks - Spring 2025</span></a>
+    <a class="dropdown-item" href="../Code/prediction_app/prediction_tool.py">
+ <span class="dropdown-text">Shiny App Script</span></a>
   </li>  
     </ul>
   </li>
@@ -131,170 +150,65 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#jessica-joy" id="toc-jessica-joy" class="nav-link active" data-scroll-target="#jessica-joy">Jessica Joy</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience">Professional Experience</a></li>
-  <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications">Certifications</a></li>
+  <li><a href="#how-to-use-this-tool" id="toc-how-to-use-this-tool" class="nav-link active" data-scroll-target="#how-to-use-this-tool">How to Use This Tool</a>
+  <ul class="collapse">
+  <li><a href="#model-information" id="toc-model-information" class="nav-link" data-scroll-target="#model-information">Model Information</a></li>
+  <li><a href="#disclaimer" id="toc-disclaimer" class="nav-link" data-scroll-target="#disclaimer">Disclaimer</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Aid Worker Security Severity Predictor</h1>
+</div>
 
 
 
-<section id="jessica-joy" class="level1" style="text-align: left; font-size: 3em; font-weight: bold;">
-<h1>Jessica Joy</h1>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="how-to-use-this-tool" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-tool">How to Use This Tool</h2>
+<ol type="1">
+<li><strong>Select incident characteristics</strong> using the dropdown menus and sliders in the sidebar</li>
+<li><strong>Review the prediction results</strong> showing the likelihood of a fatal outcome</li>
+</ol>
+<div class="shiny-app-container">
+<iframe src="https://jj1129.shinyapps.io/prediction_app/" width="100%" height="950px" frameborder="0">
+</iframe>
+</div>
+<section id="model-information" class="level3">
+<h3 class="anchored" data-anchor-id="model-information">Model Information</h3>
+<p>This prediction tool uses a Gradient Boosting classifier trained on historical data from the Aid Worker Security Database. The model considers various factors that may influence the likelihood of fatalities in security incidents affecting aid workers.</p>
 </section>
-<div style="background-color: #e3d5ca; padding: 20px; border-radius: 10px;">
-<div class="grid">
-<div class="g-col-4">
-<p><img src="images/my_image.jpg" width="200" height="300"></p>
-</div>
-<div class="g-col-8">
-<p>Welcome to my page! I am a passionate data scientist pursuing my master’s in Data Science and Analytics at Georgetown University. I have a BS in Financial Economics from Binghamton University and three years of professional data science experience at EssenceMediacom, a top marketing agency in NYC. There, I specialized in Marketing Mix Modeling, ad optimizations, and data-driven strategy to drive KPIs. Now, I am eager to expand my expertise, applying my analytical skills to solve complex challenges across industries. Let’s connect!</p>
-</div>
-</div>
-<div class="line-block"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" class="img-fluid" style="width:5.0%" alt="LinkedIn"> <a href="https://www.linkedin.com/in/jessicajoy1019">LinkedIn</a> | <img src="https://img.icons8.com/ios-filled/50/000000/github.png" class="img-fluid" style="width:5.0%" alt="GitHub"> <a href="https://github.com/joyjessica">GitHub</a></div>
-</div>
-<p>&nbsp;</p>
-<section id="skills" class="level2">
-<h2 class="anchored" data-anchor-id="skills">Skills</h2>
-<p><img src="images/python.png" class="img-fluid" style="width:10.0%"> <img src="images/r.png" class="img-fluid" style="width:15.0%"> <img src="images/sql.png" class="img-fluid" style="width:10.0%"> <img src="images/excel.png" class="img-fluid" style="width:15.0%"> <img src="images/tableau.png" class="img-fluid" style="width:15.0%"> <img src="images/powerbi.png" class="img-fluid" style="width:15.0%"></p>
-</section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><strong>Georgetown University</strong><br>
-<em>MS Data Science and Analytics</em> | Expected December 2025</p>
-<div class="grid">
-<div class="g-col-2">
-<p><img src="images/gu_seal.png" width="100" height="100"></p>
-</div>
-<div class="g-col-10">
-<ul>
-<li><strong>GPA</strong>: 4.00/4.00<br>
-</li>
-<li><strong>Involvement/Activities:</strong>
-<ul>
-<li>Women in Data Science, Leadership Committee</li>
-</ul></li>
-<li><strong>Relevant Coursework:</strong>
-<ul>
-<li>Probabilistic Modeling and Statistical Learning</li>
-<li>Computational Linguistics with Advanced Python<br>
-</li>
-<li>Advanced Data Visualization</li>
-<li>Neural Networks</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<p><strong>Binghamton University</strong><br>
-<em>BS Financial Economics</em> | May 2020</p>
-<div class="grid">
-<div class="g-col-2">
-<p><img src="images/bu-seal.png" width="100" height="100"></p>
-</div>
-<div class="g-col-10">
-<ul>
-<li><strong>Major GPA</strong>: 3.78/4.00<br>
-</li>
-<li><strong>Involvement/Activities:</strong>
-<ul>
-<li>Alpha Epsilon Phi, Treasury Committee<br>
-</li>
-<li>Helping Hand Project, Founding Member</li>
-<li>Study Abroad: Universidad Pontificia Comillas | Madrid, Spain</li>
-</ul></li>
-<li><strong>Relevant Coursework:</strong>
-<ul>
-<li>Econometric Methods</li>
-<li>Economic Forecasting</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="professional-experience" class="level2">
-<h2 class="anchored" data-anchor-id="professional-experience">Professional Experience</h2>
-<p><strong>EssenceMediacom</strong>: <em>Senior Analyst, Data Science and Modeling</em><br>
-New York, NY | June 2021 – August 2024</p>
-<div class="grid">
-<div class="g-col-2">
-<p><img src="images/em_logo.png" width="100" height="100"></p>
-</div>
-<div class="g-col-10">
-<ul>
-<li>Developed end-to-end Marketing Mix Models (MMM) for major clients, improving data processing and efficiency of 10M+ rows of creative data using Python, R, and SQL. Applied multiple linear regression modeling and validation to create final deliverables of actionable insights, resulting in increased marketing ROI.<br>
-</li>
-<li>Constructed a budget allocation tool using marketing mix model outputs, optimizing media mix strategies and driving up to a 30% increase in incremental revenue growth for clients.<br>
-</li>
-<li>Provided strategic consultation to Dell, leveraging vision AI data and advanced machine learning algorithms (Linear/Logistic Regression, K-Means Clustering, PCA) to analyze 200+ variables, potentially increasing KPIs by 130% through creative attribute optimization.<br>
-</li>
-<li>Strengthened new business pitches by building a database of 70+ marketing metrics for the “Remarkability Index,” effectively evaluating investments and securing new clients.<br>
-</li>
-</ul>
-</div>
-</div>
-<p><strong>Binghamton University Student Athlete Success Center</strong>: <em>Economics Tutor</em><br>
-Binghamton, NY | August 2019 – December 2019</p>
-<div class="grid">
-<div class="g-col-2">
-<p><img src="images/bing.png" width="100" height="80"></p>
-</div>
-<div class="g-col-10">
-<ul>
-<li>Tutored one-on-one sessions with Binghamton’s Division 1 athletes in various economics courses including Microeconomic Theory and Macroeconomics</li>
-<li>Prepared activities for students to engage interest and improve understanding of concepts</li>
-<li>Communicated with professors to determine which topics hold the most importance</li>
-</ul>
-</div>
-</div>
-<p><strong>CRC Group</strong>: <em>Broker Intern </em><br>
-Woodbury, NY | June 2019 – August 2019</p>
-<div class="grid">
-<div class="g-col-2">
-<p><img src="images/crc.png" width="100" height="100"></p>
-</div>
-<div class="g-col-10">
-<ul>
-<li>Analyzed and audited policies and endorsement data of current clients to ensure accuracy</li>
-<li>Supported marketing team in streamlining the quoting and binding process for new and renewal accounts, contributing to a reduction in processing time</li>
-<li>Collaborated closely with brokers to assist in their daily workflow</li>
-<li>Conducted visits to insurance carriers and retail brokers to gain insights on policies and coverage for new business</li>
-</ul>
-</div>
-</div>
-<p><strong>ARC Excess &amp; Surplus</strong>: <em>Insurance Underwriting Intern </em><br>
-Jericho, NY | August 2018 – December 2018</p>
-<div class="grid">
-<div class="g-col-2">
-<p><img src="images/arc.jpg" width="100" height="100"></p>
-</div>
-<div class="g-col-10">
-<ul>
-<li>Updated and managed underwriting data systems, ensuring timely analysis and decision-making for over 100 accounts</li>
-<li>Monitored and tracked policy transactions (quotes, renewals, binders) to ensure on-time issuance</li>
-<li>Facilitated communication between clients and underwriters, ensuring underwriting decisions, proposals, and status updates were clearly documented and shared</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="certifications" class="level2">
-<h2 class="anchored" data-anchor-id="certifications">Certifications</h2>
-<p><strong>New York City Data Science Academy:</strong> <em>Data Science Fellow </em><br>
-New York, NY | January 2021 – April 2021</p>
-<p><a href="https://nycdatascience.com/blog/author/jessica-joy/">Check out my blog!</a></p>
-<div id="pdf-container">
-<embed src="images/bootcamp.pdf" width="100%" height="400px" type="application/pdf">
+<section id="disclaimer" class="level3">
+<h3 class="anchored" data-anchor-id="disclaimer">Disclaimer</h3>
+<p>This tool provides an estimate based on historical patterns and should be used for informational purposes only. Always use proper security protocols and consult security professionals for actual risk assessment.</p>
+<p><span class="citation" data-cites="claude">(<a href="#ref-claude" role="doc-biblioref">n.d.</a>)</span></p>
 
 
-</div>
+
+</section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-claude" class="csl-entry" role="listitem">
+<span>“Claude Was Used to Help Code and Debug Shiny App.”</span> n.d.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #121212;
+            color: white;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: white;
+        }
+        .description {
+            margin-bottom: 20px;
+            color: white;
+        }
+        #ribbon-container {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #121212;
+            transition: opacity 1.2s ease-out;
+        }
+        #ribbon-image {
+            max-height: 300px;
+            transition: transform 0.3s ease;
+        }
+        #ribbon-image:hover {
+            transform: scale(1.05);
+        }
+        #chart-container {
+            width: 100%;
+            height: 700px;
+            opacity: 0;
+            display: none; /* Hidden initially */
+            background-color: #121212;
+            transition: opacity 1.5s ease-in;
+        }
+        .click-message {
+            text-align: center;
+            font-style: italic;
+            color: #999;
+            margin-top: 10px;
+        }
+        .key-insights {
+            margin-top: 30px;
+            color: white;
+        }
+        .key-insights h2 {
+            margin-bottom: 10px;
+            color: white;
+        }
+        .key-insights ul {
+            padding-left: 20px;
+            color: white;
+        }
+        .key-insights li {
+            margin-bottom: 8px;
+        }
+        .data-source {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #999;
+        }
+        .fadeOut {
+            opacity: 0;
+        }
+        .fadeIn {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Initially visible ribbon image -->
+    <div id="ribbon-container">
+        <div>
+            <img id="ribbon-image" src="/images/hiv_ribbon.png" alt="Red AIDS Awareness Ribbon">
+            <div class="click-message">Click on the ribbon to see detailed data</div>
+        </div>
+    </div>
+    
+    <!-- Hidden initially -->
+    <div id="chart-container"></div>
+    
+
+    
+    <div class="data-source">
+        <p>Data source: California Department of Public Health</p>
+    </div>
+    
+    <script>
+        // Store the data for the visualization
+        const data = {
+            byTransmission: {
+                x: ["MSM", "Heterosexual Contact", "IDU", "MSM/IDU", "Other"],
+                y: [24611, 8781, 2531, 1576, 71],
+                text: [
+                    "MSM: 24,611 (65.5%)",
+                    "Heterosexual Contact: 8,781 (23.4%)",
+                    "IDU: 2,531 (6.7%)",
+                    "MSM/IDU: 1,576 (4.2%)",
+                    "Other: 71 (0.2%)"
+                ],
+                colors: ["#FF8C8C", "#FFA5A5", "#FFBFBF", "#FFD8D8", "#FFF0F0"]
+            }
+        };
+        
+        // Add click event to the ribbon
+        document.getElementById('ribbon-container').addEventListener('click', function() {
+            // Start fade out of ribbon
+            const ribbonContainer = document.getElementById('ribbon-container');
+            ribbonContainer.style.opacity = "0";
+            
+            // Show chart container but keep it invisible initially
+            const chartContainer = document.getElementById('chart-container');
+            chartContainer.style.display = 'block';
+            
+            // Wait for ribbon to fade out
+            setTimeout(function() {
+                // Hide ribbon completely
+                ribbonContainer.style.display = 'none';
+                
+                // Create the chart
+                createChart();
+                
+                // Start fade in of chart
+                setTimeout(function() {
+                    chartContainer.style.opacity = "1";
+                }, 100);
+            }, 1200);
+        });
+        
+        function createChart() {
+            const chartContainer = document.getElementById('chart-container');
+            
+            // Create transmission trace
+            const transmissionTrace = {
+                x: data.byTransmission.x,
+                y: data.byTransmission.y,
+                type: 'bar',
+                name: 'By Transmission Mode',
+                text: data.byTransmission.text,
+                textfont: {
+                    color: 'white',
+                    size: 12
+                },
+                textposition: 'outside',
+                marker: {
+                    color: data.byTransmission.colors
+                },
+                hovertemplate: '<b>%{x}</b><br>Count: %{y:,}<br>Percent: %{text}<extra></extra>'
+            };
+            
+            // Create legend annotation
+            const legendAnnotation = {
+                x: 0.99,
+                y: 0.99,
+                xref: 'paper',
+                yref: 'paper',
+                text: '<b>MSM</b>: Men who have Sex with Men<br><b>IDU</b>: Injection Drug Use',
+                showarrow: false,
+                font: {color: 'white', size: 12},
+                align: 'right',
+                bgcolor: '#121212',
+                bordercolor: 'white',
+                borderwidth: 2,
+                borderpad: 6,
+                opacity: 0.8
+            };
+            
+            // Layout configuration
+            const layout = {
+                title: {
+                    text: 'HIV Cases by Transmission Mode: New Cases in USA, 2018',
+                    font: {
+                        color: 'white',
+                        size: 24
+                    },
+                    x: 0.5
+                },
+                xaxis: {
+                    title: {
+                        text: ''
+                    }
+                },
+                yaxis: {
+                    title: {
+                        text: 'Number of Cases',
+                        font: {
+                            color: 'white',
+                            size: 16
+                        }
+                    },
+                    showgrid: false,
+                    zeroline: false
+                },
+                font: {
+                    color: 'white'
+                },
+                plot_bgcolor: '#121212',
+                paper_bgcolor: '#121212',
+                margin: {
+                    t: 100,
+                    b: 100,
+                    l: 50,
+                    r: 50
+                },
+                autosize: true,
+                height: 700,
+                annotations: [legendAnnotation]
+            };
+            
+            // Create the plot with transmission trace
+            Plotly.newPlot(chartContainer, [transmissionTrace], layout, {responsive: true});
+        }
+    </script>
+</body>
+</html>
