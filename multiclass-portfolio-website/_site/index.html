@@ -209,7 +209,7 @@ body {
 
 /* Hero Section */
 .hero {
-  padding: 4rem 0 2rem;
+  padding: 6rem 0 3rem;
   background: var(--background);
 }
 
@@ -219,30 +219,30 @@ body {
   padding: 0 2rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 
 .hero-content .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--accent);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 500;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-light);
-  margin-bottom: 2rem;
-  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .hero-buttons {
@@ -288,8 +288,8 @@ body {
 }
 
 .profile-img {
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 320px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 10px 30px var(--shadow);
@@ -297,7 +297,7 @@ body {
 
 /* Section Styles - Made more compact */
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .section-alt {
@@ -312,65 +312,65 @@ body {
 
 .section-title {
   text-align: center;
-  margin-bottom: 2.5rem;
-  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .section-title h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .section-title p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text-light);
 }
 
 /* Skills Section - Reduced spacing */
 #skills {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 #skills .section-title {
-  padding-top: 0.5rem;
-  margin-bottom: 2rem;
+  padding-top: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 /* Skills Grid - Fixed centering */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 1.5rem;
-  max-width: 700px;
+  gap: 1rem;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .skill-item {
   background: var(--card-bg);
   padding: 0;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 2px 10px var(--shadow);
   transition: all 0.3s ease;
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   position: relative;
 }
 
 .skill-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 5px 20px var(--shadow);
   border-color: var(--accent);
 }
 
 .skill-item img {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   position: absolute;
   top: 50%;
@@ -381,13 +381,13 @@ body {
 /* Experience Cards - More compact */
 .experience-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .experience-card {
   background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 8px;
   box-shadow: 0 2px 10px var(--shadow);
   transition: all 0.3s ease;
   border: 1px solid var(--border);
@@ -402,14 +402,14 @@ body {
 .experience-header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .company-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -421,21 +421,22 @@ body {
 }
 
 .experience-info h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--primary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 }
 
 .experience-info .role {
   color: var(--accent);
   font-weight: 500;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
+  font-size: 0.95rem;
 }
 
 .experience-info .duration {
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .experience-description ul {
@@ -445,9 +446,11 @@ body {
 
 .experience-description li {
   position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
   color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .experience-description li::before {
@@ -476,11 +479,11 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-content .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .skills-grid {
